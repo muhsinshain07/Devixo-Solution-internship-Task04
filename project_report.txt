@@ -1,0 +1,35 @@
+BANKING MANAGEMENT SYSTEM
+PROJECT REPORT
+
+1. Project Title
+Banking Management System in C++
+
+2. Objective
+The objective of this project is to develop a console-based banking application that manages customer accounts and financial transactions. The program demonstrates advanced C++ programming concepts, object-oriented design, STL usage, exception handling, searching, sorting, and file handling.
+
+3. Technologies Used
+Programming language: C++17
+Application type: Console application
+Storage method: File handling using accounts.dat
+Main STL structure: vector
+
+4. Main Features
+The system allows the user to create, view, search, update, and delete accounts. It also supports deposits, withdrawals, transfers, balance checks, PIN authentication, transaction history, and account statement generation.
+
+5. Object-Oriented Programming
+The abstract Account class stores common account information and defines common operations. SavingsAccount and CurrentAccount inherit from Account and provide specialized account behavior. Virtual functions demonstrate runtime polymorphism. Private data members and public member functions provide encapsulation. Constructors initialize account objects safely.
+
+6. Exception Handling
+The program defines custom exception classes for account-not-found errors, authentication errors, and transaction errors. Invalid amounts, incorrect PINs, insufficient funds, invalid account numbers, and invalid account types are handled without terminating the application unexpectedly.
+
+7. File Handling
+Account records are serialized and stored in accounts.dat. The program loads the records when it starts and saves changes after account creation, updates, deletions, deposits, withdrawals, and transfers. This ensures that data remains available after the program is closed and reopened.
+
+8. Searching and Sorting
+Search functionality can find accounts by account number, holder name, or phone number. Accounts can be sorted alphabetically by holder name or by balance in descending order.
+
+9. Security and Validation
+A four-digit PIN is required for sensitive operations. The program validates user input, prevents invalid transactions, enforces minimum balance rules, and checks authentication before withdrawals, transfers, account deletion, balance checks, and statements.
+
+10. Conclusion
+The Banking Management System satisfies the required advanced C++ concepts and provides a practical example of modular console application design. It can be extended in the future with administrator login, interest calculation, loan management, monthly reports, encrypted credentials, and a database backend.

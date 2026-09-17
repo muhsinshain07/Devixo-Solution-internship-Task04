@@ -1,0 +1,51 @@
+SAMPLE TEST INPUT
+=================
+
+Run the application and enter the following values one at a time.
+This sequence creates a savings account, views all accounts, searches for Alice,
+and exits the program.
+
+1
+1
+Alice Johnson
+5551234567
+1234
+1000
+3
+4
+Alice
+0
+
+Expected result:
+- A savings account is created.
+- The account number is displayed, usually beginning at 100001.
+- The account appears in the all-accounts list.
+- Searching for Alice displays the account.
+- The program exits and saves data to accounts.dat.
+
+Additional manual tests:
+
+Deposit:
+7
+100001
+250
+
+Withdraw:
+8
+100001
+1234
+100
+
+Balance check:
+10
+100001
+1234
+
+Account statement:
+11
+100001
+1234
+
+Important:
+The account number may differ if accounts.dat already contains records.
+For a clean test, close the program and remove accounts.dat before starting again.
